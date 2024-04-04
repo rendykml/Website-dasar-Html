@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <style>
+      /*
+        font-family: menetapkan jenis font yang akan diterapkan pada target.
+        font-size: menentukan ukuran pada teks.
+        font-weight: menentukan ketebalan pada teks. 
+        font-style: menetapkan styling yang diterapkan pada teks.
+        font-variant: menentukan teks untuk menggunakan gaya small caps (huruf kapital kecil).
+        font: sebagai shorthand dari properti font yang ada.
+     */
+      body {
+        font-family: sans-serif;
+      }
+      /*  
+        em contohnya, 2em berarti 2 kali lebih besar dari ukuran font seharusnya
+        ex Satuan relatif terhadap tinggi font saat ini, satuan ini sangat jarang sekali digunakan
+        rem Mirip seperti em, tetapi rem merupakan satuan relatif terhadap ukuran font dari root element.
+        ch Satuan relatif terhadap lebar dari karakter “0” nol
+        vw  Contoh 1vw = 1% dari lebar viewport. Satuan ini tidak didukung pada browser IE8 ke bawah.
+        vh Satuan relatif terhadap 1% tinggi viewport. Contoh 1vh = 1% dari tinggi viewport. Satuan ini tidak didukung pada browser IE8 ke bawah.
+      */
+      h1 {
+        font-size: 2em;
+      }
+      .ex {
+        font-size: 3ex;
+      }
+      .rem {
+        font-size: 3rem;
+      }
+      .ch {
+        font-size: 20ch;
+      }
+      /*
+      px Menetapkan nilai font berdasarkan ukuran pixel.
+      pt Menetapkan nilai font berdasarkan points (1/72 inch di CSS2.1)
+      pc Menetapkan nilai font berdasarkan picas (1 pica = 12 point).
+      mm Menetapkan nilai font berdasarkan millimeters. 
+      cm Menetapkan nilai font berdasarkan centimeters.
+      in Menetapkan nilai font berdasarkan inches.
+      */
+      p {
+        font-size: 20px;
+      }
+    </style>
+    <header>
+      <div class="jumbotron">
+        <h1>Bandung</h1>
+        <p>
+          Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi
+          ibu kota provinsi tersebut.
+        </p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a class="ex" href="#">Sejarah</a></li>
+          <li><a class="rem" href="#">Geografis</a></li>
+          <li><a class="ch" href="#">Wisata</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

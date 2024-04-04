@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konsep | CSS</title>
+  </head>
+  <body>
+    <style>
+        p {
+            /* css akan membaca dari atas kebawah
+               jadi warna akan berubah brown tidak cyan
+            */
+            color: cyan;
+            color: brown;
+            /* css akan mementikan elemnt yang mempunyai
+               commad importan jadi cyan di dahulukan
+            */
+            background-color: cyan !important;
+            background-color: brown;
+
+            padding: 20px;
+        }
+    </style>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi laboriosam
+      temporibus, est dolor quo possimus, maxime ipsum assumenda delectus nulla
+      recusandae magni perspiciatis nobis quam?
+    </p>
+  </body>
+</html>
