@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>styling pada HTML</title>
+    <!--External style sheet-->
+    <!--
+        Berkas harus berekstensi .css dan akan 
+        dihubungkan dengan dokumen HTML. Cara 
+        ini merupakan yang paling powerful dalam
+         menerapkan styling.
+    -->
+    <link rel="stylesheet" href="css/syles.css" />
+    <!--Website style sheet-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!--Embedded syle sheet-->
+    <!--
+        style yang hanya mencakup 1 berkas 
+        1 halaman web html
+    -->
+    <style>
+      h2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!--menggunakan impor css(external style-->
+    <h1>Kota Bandung</h1>
+    <br />
+
+    <!--Menggunakan Embedded syle sheet-->
+    <h2>Kota Cimahi</h2>
+    <br />
+
+    <!--Inline syle-->
+    <h3 style="color: black; margin-top: 2em">Kota GArut</h3>
+  </body>
+</html>

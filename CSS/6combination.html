@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <style>
+      /* Rule akan diterapkan pada elemen gambar
+       yang berada tepat setelah elemen p */
+      p + img {
+        margin-left: 20px;
+      }
+      /* Rule akan diterapkan pada semua elemen <p> yang susunannya terletak setelah elemen <img> */
+      img ~ p {
+        color: green;
+      }
+    </style>
+    <p>
+      Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada
+      elemen paragraf ini.
+    </p>
+    <img src="gambar/gambar1.jpeg" alt="genshin" width="200px" />
+    <p>
+      Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka
+      paragraf ini seharusnya menerapkan rule dengan menampilkan teks berwarna
+      hijau.
+    </p>
+    <p>
+      Ini merupakan paragraf ketiga. Letaknya memang setelah elemen gambar,
+       diletakkan persis setelahnya, sehingga rule akan
+      diterapkan pada elemen ini.
+    </p>
+    <div>
+      <p>paragraf yang di bungkus oleh div jadi tidak terkena elemn css</p>
+    </div>
+  </body>
+</html>

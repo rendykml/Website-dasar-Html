@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <style>
+      /* type selector(tanpa menggunakan titik)*/
+      span {
+        color: red;
+      }
+      /* class selector (diawali titik . lalu nama class)*/
+      .paragraf {
+        color: rgb(25, 102, 170);
+        background-color: blanchedalmond;
+        font-weight: bold;
+        text-shadow: 4px 4px 3px #0af0e4;
+      }
+      /* id selector (diawali #  lalu nama id)*/
+      #special {
+        color: blueviolet;
+      }
+    </style>
+    <span>
+      Ini merupakan sebuah teks yang berada pada elemen span. Seharusnya elemen
+      ini ditampilkan dengan warna teks merah.
+    </span>
+    <p class="paragraf">
+      Ini merupakan sebuah teks yang berada pada elemen paragraf, teks ini tidak
+      seharusnya tidak akan terpengaruh oleh rule.
+    </p>
+    <span id="special">
+      Ini merupakan sebuah teks yang berada pada elemen span lainnya. Seharusnya
+      elemen ini ditampilkan dengan warna teks merah juga.
+    </span>
+    <style>
+      /* style pada atribute */
+      /* <a> element yang menerapkan href attribute */
+      a[href] {
+        color: blue;
+      }
+
+      /* <a> element yang menerapkan nilai 
+        pada href dengan awalan "#" 
+     */
+      a[href^="#"] {
+        background-color: gold;
+      }
+
+      /* <a> element yang menerapkan nilai pada 
+        href yang mengandung teks "example" 
+     */
+      a[href*="example"] {
+        background-color: silver;
+      }
+
+      /* <a> element yang menerapkan nilai 
+        pada href yang mengandung teks "insensitive" 
+        tidak mementingkan huruf kapital
+     */
+      a[href*="insensitive" i] {
+        color: cyan;
+      }
+
+      /* <a> element yang menerapkan nilai 
+        pada href dengan akhiran ".org" 
+    */
+      a[href$=".org"] {
+        color: red;
+      }
+      /* Menargetkan seluruh tipe elemen */
+      * {
+        padding: 20px;
+      }
+      a {
+        border: 1px solid blue;
+        padding: 20px;
+      }
+    </style>
+    <ul>
+      <ul>
+        <li><a href="#internal">Internal link</a></li>
+        <li><a href="http://example.com">Example link</a></li>
+        <li><a href="#InSensitive">Insensitive internal link</a></li>
+        <li><a href="http://example.org">Example org link</a></li>
+      </ul>
+    </ul>
+    <style>
+      /* Menargetkan seluruh tipe elemen */
+      * {
+        color: green;
+      }
+
+      /* Menargetkan seluruh tipe elemen yang mengandung nilai "en" pada atribut lang */
+      *[lang^="en"] {
+        font-style: italic;
+      }
+
+      /* Menargetkan seluruh tipe elemen yang memiliki nilai "warning" pada atribut class */
+      *.warning {
+        color: red;
+      }
+
+      /* Menargetkan seluruh tipe elemen yang memiliki nilai "content" pada atribut id */
+      *#content {
+        border: 1px solid blue;
+        padding: 20px;
+      }
+    </style>
+    <p>
+      Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka
+      teks pada paragraf ini akan berwarna hijau
+    </p>
+    <p lang="en-us">
+      This is an English paragraph contains en-us value of lang attribute, so
+      this text will be green and italic.
+    </p>
+
+    <h1>Ini merupakan sebuah header biasa</h1>
+    <h1 lang="en-us">This is an English Header</h1>
+
+    <p class="warning">
+      Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki
+      kelas bernilai warning, sehingga teks dari paragraf ini akan berwarna
+      merah
+    </p>
+
+    <div id="content">
+      <p>
+        Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai
+        "content", seharusnya paragraf ini dibungkus dalam border yang memiliki
+        padding 20px
+      </p>
+    </div>
+  </body>
+</html>
