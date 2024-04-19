@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>border width</h1>
+    <p>
+      Properti border-width digunakan untuk mengatur ketebalan dari border,
+      nilai dari properti ini dapat berupa piksel atau menggunakan predefined
+      names value, seperti thin, medium, dan thick. Kita tidak bisa menggunakan
+      nilai persentase (%) pada properti ini.
+    </p>
+    <p>
+      <i
+        >Harus menetapkan ketebalan (border-width), tipe (border-type), dan warna
+        (border-color)
+      </i> Jika tidak menerapkan salah satunya gari tidak akan tampak
+    </p>
+    <style>
+      .box {
+        border-color: black;
+        border-width: 2px 3px 3px 2px; /*top right bottom left*/
+        border-style: solid;
+        width: 50px;
+        height: 50px;
+      }
+      .box.box:active {
+        border-width: 1px 2px 2px 1px;
+        border-color: rgba(56, 51, 51, 0.954);
+        border-right-style: dotted;
+        border-bottom-style: groove;
+        border-left-style: double;
+      }
+      .div {
+        border: 3px solid rebeccapurple;
+        width: 200px;
+        height: 200px;
+      }
+      .div:hover {
+        width: 220px;
+        height: 200px;
+      }
+    </style>
+    <div class="box"></div> <br>
+    <div class="div"></div>
+  </body>
+</html>
