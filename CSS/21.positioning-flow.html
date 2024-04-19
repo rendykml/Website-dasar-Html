@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>positioning</title>
+  </head>
+  <style>
+    h1 {
+      background-color: #aaaaaa;
+      padding: 30px;
+    }
+
+    p {
+      width: 450px;
+    }
+  </style>
+  <body>
+    <h1>Normal Flow</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+      voluptatum, rem quo dolore obcaecati eaque temporibus dolorum laudantium
+      harum doloremque suscipit cum mollitia repellat asperiores optio, incidunt
+      fuga magni vel?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam
+      nemo fugiat inventore non officia modi deleniti. Ea dolores cupiditate
+      corrupti laborum perspiciatis natus debitis distinctio, harum facere
+      nesciunt placeat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate velit
+      error sapiente provident, quasi maxime quae accusantium repellendus esse
+      commodi, quo necessitatibus rem? Alias exercitationem perspiciatis saepe
+      quos rem sapiente.
+    </p>
+
+    <h1>Relative positioning</h1>
+    <style>
+      .Relative {
+        position: relative;
+        top: 10px;
+        left: 100px;
+      }
+    </style>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugit
+      qui, quasi inventore necessitatibus dicta ducimus recusandae fugiat dolore
+      maiores assumenda, totam est commodi modi! Aperiam a similique minima
+      nobis magnam possimus reprehenderit debitis, sed nostrum repellendus sequi
+      facilis laborum.
+    </p>
+    <p class="Relative">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et
+      voluptate expedita. Ipsa nobis cum natus autem sequi praesentium iusto
+      assumenda magni aliquid ipsum quos, sapiente eveniet atque esse
+      aspernatur?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      laudantium corrupti nisi nam soluta esse aliquam eum ipsum cumque enim,
+      facilis provident aperiam quas sunt molestiae explicabo sequi nostrum
+      amet?
+    </p>
+    <style>
+        .pembatas {
+            background-color: aqua;
+            width: 100%;
+            display: block;
+            border: 1;
+            height: 100%;
+        }
+        .none {
+            display: none ;
+        }
+    </style>
+    <div class="pembatas">
+        <h1 > <span class="none">pembatas</span></h1>
+    </div>
+    <div>
+        <style>
+            .abosulute {
+                position: absolute;
+                margin-left: 500px;
+                
+            }
+        </style>
+      <h1 class="abosulute">Absolut positioning</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+        voluptatem unde, quae nesciunt molestias labore voluptates fugit
+        incidunt vel delectus rem magnam tenetur possimus, earum adipisci
+        nostrum illum provident esse repellendus quisquam debitis. Harum,
+        molestiae voluptatum nemo voluptates in architecto?
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum
+        voluptatibus necessitatibus ut accusamus reiciendis voluptas vel,
+        expedita quisquam voluptatum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+        minus excepturi. A, repudiandae. Blanditiis eius distinctio excepturi
+        illum error consectetur aut nulla et officia dolorum? Harum recusandae
+        quam vel praesentium unde quisquam, voluptate vitae corrupti est qui
+        itaque, expedita provident!
+      </p>
+    </div>
+  </body>
+</html>

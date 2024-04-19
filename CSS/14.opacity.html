@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Opacity</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      p {
+        background-color: red;
+      }
+
+      p.opacity-50 {
+        opacity: 50%;
+      }
+
+      p.opacity-100 {
+        opacity: 100%;
+      }
+      div {
+        width: 50%;
+        height: 200px;
+
+        line-height: 200px;
+        text-align: center;
+      }
+
+      .box-1 {
+        background-color: rgb(255, 255, 0, 0.75);
+
+        float: left;
+      }
+
+      .box-2 {
+        background-color: hsl(120, 100%, 25%, 0.75);
+
+        float: left;
+        margin-left: -25%;
+      }
+
+      .box-3 {
+        background-color: #0000ffaa;
+
+        float: left;
+        margin-left: -25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Opacity 50%:</h1>
+      <p class="opacity-50">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+        temporibus facere impedit natus blanditiis similique laudantium quaerat
+        tenetur quod praesentium.
+      </p>
+    </div>
+
+    <div>
+      <p>Opacity 100% (default):</p>
+      <p class="opacity-100">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+        reprehenderit aut perferendis totam tempore, obcaecati suscipit.
+        Explicabo assumenda recusandae voluptas.
+      </p>
+      <div class="box-1">Box 1</div>
+      <div class="box-2">Box 2</div>
+      <div class="box-3">Box 3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      /* Dimension */
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .div {
+        box-sizing: border-box;
+        width: 300px;
+        height: 300px;
+        background-color: bisque;
+        padding: 50px;
+        padding-right: 50px;      }
+      .p {
+        width: 80%;
+        height: 80%;
+        background-color: aquamarine;
+      }
+    </style>
+    <div class="div">
+      <p class="p">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+        consectetur in, beatae ut voluptates quaerat incidunt ipsum nostrum
+        architecto
+      </p>
+    </div>
+    <style>
+      /* 
+            Min-height menetapkan nilai lebar minimal yang harus dimiliki elemen.
+            Max-height menetapkan nilai lebar maksimal yang harus dimiliki elemen.
+        */
+      .content {
+        max-width: 800px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: deeppink;
+      }
+      .p1 {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+    <div class="content">
+      <p class="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+        eius explicabo fuga iusto magni minus odit praesentium, quasi quisquam
+        quos repellat suscipit tempora tenetur? Assumenda cum laborum officiis
+        quos ratione.
+      </p>
+    </div>
+    <h1>Overflowing Content</h1>
+    <style>
+      .div2 {
+        justify-content: flex-end;
+      }
+      .visible {
+        height: 200px;
+        width: 200px;
+        background-color: cyan;
+        display: inline-block;
+        margin-right: 10px;
+        overflow: visible;
+      }
+      .hidden {
+        height: 200px;
+        width: 200px;
+        background-color: cyan;
+        overflow: hidden;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .scroll {
+        height: 200px;
+        width: 200px;
+        background-color: cyan;
+        overflow: scroll;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .auto {
+        overflow: auto;
+        height: 200px;
+        width: 200px;
+        background-color: cyan;
+        display: inline-block;
+      }
+    </style>
+    <div class="div2">
+      <div class="visible">
+        <p class="p2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quas
+          eos neque fugit totam mollitia necessitatibus consequatur beatae
+          cupiditate adipisci velit reiciendis, blanditiis facilis nesciunt
+          consectetur. Voluptates quibusdam maiores a velit cum doloribus quod
+          nesciunt. Neque ducimus, fugit, consequatur nobis eveniet mollitia
+          animi iusto aliquid numquam deserunt sunt, quod magnam.
+        </p>
+      </div>
+      <div class="hidden">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          cupiditate recusandae aspernatur delectus ipsa, fugit adipisci
+          provident atque assumenda maxime perspiciatis. Nulla nihil ullam
+          dignissimos corporis architecto nobis perspiciatis temporibus fuga
+          sed! Maxime illo earum quam rem natus? Nulla ipsam doloribus hic.
+          Tenetur voluptatem quam velit iure, itaque vitae suscipit.
+        </p>
+      </div>
+      <div class="scroll">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          cupiditate recusandae aspernatur delectus ipsa, fugit adipisci
+          provident atque assumenda maxime perspiciatis. Nulla nihil ullam
+          dignissimos corporis architecto nobis perspiciatis temporibus fuga
+          sed! Maxime illo earum quam rem natus? Nulla ipsam doloribus hic.
+          Tenetur voluptatem quam velit iure, itaque vitae suscipit.
+        </p>
+      </div>
+      <div class="auto">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          cupiditate recusandae aspernatur delectus ipsa, fugit adipisci
+          provident atque assumenda maxime perspiciatis. Nulla nihil ullam
+          dignissimos corporis architecto nobis perspiciatis temporibus fuga
+          sed! Maxime illo earum quam rem natus? Nulla ipsam doloribus hic.
+          Tenetur voluptatem quam velit iure, itaque vitae suscipit.
+        </p>
+      </div>
+    </div>
+    <h1>Box Sizing</h1>
+    <style>
+      h1 {
+        padding-top: 10px;
+      }
+      .sizing {
+        box-sizing: content-box;
+        height: 200px;
+        width: 200px;
+        background-color: lightgreen;
+        border: 10px solid cornflowerblue;
+        padding: 20px;
+      }
+
+      .box {
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+        background-color: lightgreen;
+        border: 10px solid cornflowerblue;
+        padding: 20px;
+      }
+    </style>
+    <div class="sizing"></div>
+    <p>
+      Elemen menerapkan <code>box-sizing: content-box;</code> Ukuran box secara
+      keseluruhan akan menjadi 260px lebar, 260px tinggi; 260 = 200 + 20 + 20 +
+      10 + 10
+    </p>
+    <br />
+    <div class="box"></div>
+    <p>
+      Elemen menerapkan <code>box-sizing: border-box;</code> Ukuran box akan
+      tetap 200px lebar, 200px tinggi meskipun menerapkan padding dan border
+    </p>
+  </body>
+</html>

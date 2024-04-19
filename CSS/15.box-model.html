@@ -1,0 +1,78 @@
+<!--
+    Lebar dan tinggi pada kotak (konten).
+    Ruang kosong antara konten dengan border (padding).
+    Garis tepi (border).
+    Jarak dari elemen lain (margin).
+     
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+     
+      padding: 50px;
+      background-color: black;
+      color: white;
+      font-family: "Open Sans", sans-serif !important;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.0037em;
+      line-height: 36px;
+    }
+    div {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+
+
+  </style>
+  <body>
+    <div>
+      <ul>
+        <li>Content</li>
+        <p>
+          Content atau konten merupakan sebuah inti dari kotak elemen yang
+          merupakan konten dari elemen itu sendiri.
+        </p>
+        <li>Padding</li>
+        <p>
+          Area yang menjadi jarak antara border elemen dengan konten yang
+          ditampilkan. Ketika kita menerapkan background-color, warna tersebut
+          diterapkan pada area padding. Penerapan ukuran padding pada elemen
+          adalah opsional.
+        </p>
+        <li>border</li>
+        <p>
+          Border merupakan garis yang mencakup konten beserta padding. Penerapan
+          border pada elemen adalah opsional.
+        </p>
+        <li>Margin</li>
+        <p>
+          Berbeda dengan padding, margin merupakan area jarak di luar border.
+          Pada ilustrasi di atas, margin ditunjukkan dengan warna merah muda.
+          Namun, pada aslinya margin selalu transparan dan penerapan margin pada
+          elemen adalah opsional.
+        </p>
+        <li>Edge of Elemnt</li>
+        <p>
+          Edge of element merupakan batas dari suatu elemen. Di dalamnya
+          terdapat margin, border, padding, dan konten. Pada ilustrasi di atas,
+          batas elemen ditunjukkan dengan garis putus, tetapi pada aslinya batas
+          elemen selalu tidak terlihat.
+        </p>
+      </ul>
+    </div>
+  </body>
+</html>

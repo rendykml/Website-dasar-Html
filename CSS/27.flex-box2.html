@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Flex Container</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    .flex {
+      display: flex;
+      /*
+        Row : flex items yang akan disusun secara horizontal dari kiri ke kanan
+        row-reverse : * * tetapi beraah terbalik dari kanan ke kiri
+        column : flex items akan disusun secara vertikal dari atas ke bawah 
+        column-reverse : flex items akan disusun secara vertikal, tetapi dengan arah terbalik ( bawah ke atas )  
+      */
+      flex-direction: row;
+    }
+  </style>
+  <body>
+    <main>
+      <h1>flex direction (arah susunan vertikal/horizontal)</h1>
+      <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+      <style>
+        .box {
+          width: 200px;
+          height: 100px;
+
+          margin-bottom: 8px;
+        }
+        .box:nth-child(odd) {
+          background-color: salmon;
+        }
+
+        .box:nth-child(even) {
+          background-color: lime;
+        }
+
+        .flex-1 {
+          display: flex;
+
+          /* Silakan coba seluruh nilainya */
+          flex-wrap: wrap;
+          /*flex-wrap: wrap;*/
+          /*flex-wrap: wrap-reverse;*/
+          /*nowrap: seluruh flex items hanya akan ditempatkan dalam satu baris meskipun sangat banyak jumlahnya.
+            wrap: nilai ini menyebabkan flex items akan diletakkan ke baris yang baru (berikutnya) sehingga menjadi multiple lines.
+            wrap-reverse: meskipun mirip dengan wrap, nilai ini akan menyebabkan beberapa flex items ditempatkan dengan menambahkan baris sebelumnya. */
+        }
+      </style>
+      <h1>flex wrap (membuat sejajar atau jajaran baru)</h1>
+      <div class="flex-1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+      </div>
+      <style>
+        .box1 {
+          width: 100px;
+        }
+        .box1:nth-child(odd) {
+          background-color: rgba(250, 114, 239, 0.849);
+        }
+        .box1:nth-child(even) {
+          background-color: aqua;
+        }
+        .flex-2 {
+          height: 50vh;
+          display: flex;
+          align-items: stretch;
+
+          /*Stretch: melebar hingga memenuhi container dalam cross axis. Setiap child element akan memiliki nilai height yang sama, meskipun isi konten berbeda.*/
+          /*Flex-start: setiap child element akan memiliki ukuran height sesuai dengan isi konten serta seluruhnya akan berada di tepi cross-start.*/
+          /*Flex-end: setiap child element akan memiliki ukuran height sesuai dengan isi konten serta seluruhnya akan berada di tepi cross-end.*/
+          /*Center: setiap child element memiliki ukuran height sesuai dengan isi konten dan secara vertikal posisi elemen berada di tengah.*/
+          /*Baseline: nilai pada asalnya akan menyerupai flex-start. Namun, jika konten pertama pada masing-masing child element memiliki ukuran height yang berbeda, child element lainnya akan menyesuaikan posisinya secara cross axis dari cross-start. */
+        }
+      </style>
+      <h1>align items</h1>
+      <div class="flex-2">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+        <div class="box1">4</div>
+        <div class="box1">5</div>
+        <div class="box1">6</div>
+      </div>
+      <style>
+        .flex-3 {
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .box2 {
+          width: 100px;
+          height: 100px;
+        }
+        .box2:nth-child(odd) {
+          background-color: black;
+        }
+        .box2:nth-child(even) {
+          background-color: yellow;
+        }
+      </style>
+      <h1>justify content</h1>
+      <div class="flex-3">
+        <div class="box2">1</div>
+        <div class="box2">2</div>
+        <div class="box2">3</div>
+        <div class="box2">4</div>
+        <div class="box2">5</div>
+        <div class="box2">6</div>
+      </div>
+      <style>
+        .flex-4 {
+          background-color: lightgrey;
+          height: 50vh;
+          display: flex;
+          
+
+          /* Align content hanya bekerja saat membentuk multi-lines*/
+          flex-wrap: wrap;
+
+          /* Silakan coba seluruh nilainya */
+          align-content: space-evenly;
+          /*align-content: flex-end;*/
+          /*align-content: center;*/
+          /*align-content: space-between;*/
+          /*align-content: space-around;*/
+          /*align-content: space-evenly;*/
+        }
+        .box3:nth-child(odd) {
+          width: 100px;
+          background-color: aqua;
+        }
+        .box3:nth-child(even) {
+          width: 100px;
+          background-color: wheat;
+        }
+      </style>
+      <h1>align content</h1>
+      <div class="flex-4">
+        <div class="box3">1</div>
+        <div class="box3">2</div>
+        <div class="box3">3</div>
+        <div class="box3">4</div>
+        <div class="box3">5</div>
+        <div class="box3">6</div>
+        <div class="box3">7</div>
+        <div class="box3">8</div>
+      </div>
+      <style>
+        .flex4 {
+          background-color: blueviolet;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+          align-content: center ;
+          justify-content: center;
+          padding-top: 16px;
+          /*contoh lainnya*/
+          /*gap: 16px 24px;*/
+          /*row-gap: 16px;*/
+          /*column-gap: 24px;*/
+        }
+        /*gap: 1rem;  diterapkan secara vertikal dan horizontal dengan nilai yang sama 
+        gap: 1rem 2rem;  diterapkan secara vertikal dan horizontal 
+        row-gap: 1rem;  diterapkan secara horizontal 
+        column-gap: 1rem;  diterapkan secara vertikal  */
+      </style>
+      <h1>gap (celah)</h1>
+      <div>
+        <div class="flex4">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+          <div class="box">4</div>
+          <div class="box">5</div>
+          <div class="box">6</div>
+          <div class="box">7</div>
+          <div class="box">8</div>
+          <div class="box">9</div>
+
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
